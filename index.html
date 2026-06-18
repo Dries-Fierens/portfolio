@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dries Fierens — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-role="all">
+    <header class="container">
+        <nav>
+            <a class="active" href="index.html">Home</a>
+            <a href="tooldev.html">Tool Development</a>
+            <a href="gameplayprogramming.html">Gameplay Programming</a>
+            <a href="about.html">About</a>
+        </nav>
+        <h1>I build tools and gameplay systems.</h1>
+        <p class="subtitle">Pick the portfolio version that matches the role you are hiring for.</p>
+        <div class="hero-choices">
+            <a class="choice" href="tooldev.html"><strong>Tool Development</strong><br><span class="muted">Pipelines, editors, automation</span></a>
+            <a class="choice" href="gameplayprogramming.html"><strong>Gameplay Programming</strong><br><span class="muted">Combat, controls, AI behaviors</span></a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="cta">
+            <strong>Contact:</strong>
+            <a href="mailto:dries.fierens@outlook.be">dries.fierens@outlook.be</a> •
+            <a href="https://www.linkedin.com/in/dries-fierens-13a043223/" target="_blank" rel="noreferrer">LinkedIn</a> •
+            <a href="https://github.com/Dries-Fierens/" target="_blank" rel="noreferrer">GitHub</a>
+        </section>
+    </main>
+
+    <footer class="container">© <span id="year"></span> Dries Fierens</footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
