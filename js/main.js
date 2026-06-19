@@ -1,4 +1,9 @@
 (function () {
+  renderRoleProjects();
+  renderFeaturedProjects();
+})();
+
+function renderRoleProjects() {
   const listEl = document.getElementById("projects-list");
   if (!listEl || !window.PROJECTS) return;
 
@@ -16,7 +21,23 @@
   }
 
   listEl.innerHTML = filtered.map(projectCard).join("");
-})();
+}
+
+function renderFeaturedProjects() {
+  const featuredEl = document.getElementById("featured-projects");
+  if (!featuredEl || !window.PROJECTS) return;
+
+  const featured = window.PROJECTS
+    .filter((p) => p.quality === "high" && p.featured)
+    .slice(0, 2);
+
+  if (featured.length === 0) {
+    featuredEl.innerHTML = `<p class="muted">Mark projects with <code>featured: true</code> in <code>data/projects.js</code>.</p>`;
+    return;
+  }
+
+  featuredEl.innerHTML = featured.map(projectCard).join("");
+}
 
 function projectCard(p) {
   const tech = (p.tech || []).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("");

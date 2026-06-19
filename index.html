@@ -14,15 +14,47 @@
             <a href="gameplayprogramming.html">Gameplay Programming</a>
             <a href="about.html">About</a>
         </nav>
-        <h1>I build tools and gameplay systems.</h1>
-        <p class="subtitle">Pick the portfolio version that matches the role you are hiring for.</p>
-        <div class="hero-choices">
-            <a class="choice" href="tooldev.html"><strong>Tool Development</strong><br><span class="muted">Pipelines, editors, automation</span></a>
-            <a class="choice" href="gameplayprogramming.html"><strong>Gameplay Programming</strong><br><span class="muted">Combat, controls, AI behaviors</span></a>
-        </div>
     </header>
 
     <main class="container">
+        <section class="hero">
+            <h1>I build tools and gameplay systems.</h1>
+            <p class="subtitle">
+                Recruiters can jump directly to the version of my portfolio that matches the role.
+                Visuals first, technical breakdowns second.
+            </p>
+
+            <div class="hero-choices">
+                <a class="choice" href="tooldev.html">
+                    <strong>Tool Development</strong><br>
+                    <span class="muted">Pipelines, editors, automation, team velocity</span>
+                </a>
+                <a class="choice" href="gameplayprogramming.html">
+                    <strong>Gameplay Programming</strong><br>
+                    <span class="muted">Combat, controls, AI, game-feel implementation</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Core Skills</h2>
+            <div class="skills">
+                <span class="skill">C++</span>
+                <span class="skill">Unreal Engine</span>
+                <span class="skill">Gameplay Systems</span>
+                <span class="skill">Editor Tools</span>
+                <span class="skill">AI Behaviors</span>
+                <span class="skill">Debugging & Profiling</span>
+                <span class="skill">Pipeline Automation</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Featured Projects</h2>
+            <p class="subtitle">A quick look at selected work. Open a role page for full breakdowns.</p>
+            <section id="featured-projects" class="grid"></section>
+        </section>
+
         <section class="cta">
             <strong>Contact:</strong>
             <a href="mailto:dries.fierens@outlook.be">dries.fierens@outlook.be</a> •
@@ -31,7 +63,8 @@
         </section>
     </main>
 
-    <footer class="container">© <span id="year"></span> Dries Fierens</footer>
+    <script src="data/projects.js"></script>
+    <script src="js/main.js"></script>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
