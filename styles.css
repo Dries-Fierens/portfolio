@@ -266,3 +266,158 @@ footer {
     color: var(--muted);
     padding: 20px 0 34px;
 }
+
+/* =========================
+   VIBRANT CODE-THEMED FX
+   ========================= */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* background effect container */
+.fx-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* animated colorful glows */
+.blob {
+    position: absolute;
+    width: 42vw;
+    height: 42vw;
+    border-radius: 50%;
+    filter: blur(55px);
+    opacity: .24;
+    animation: blobFloat 16s ease-in-out infinite alternate;
+}
+
+.blob-a {
+    left: -10vw;
+    top: -12vw;
+    background: radial-gradient(circle, #6ea8ff 0%, rgba(110,168,255,0) 65%);
+}
+
+.blob-b {
+    right: -12vw;
+    bottom: -14vw;
+    background: radial-gradient(circle, #7ef0c7 0%, rgba(126,240,199,0) 65%);
+    animation-delay: 2s;
+}
+
+@keyframes blobFloat {
+    0% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+
+    100% {
+        transform: translateY(30px) translateX(20px) scale(1.08);
+    }
+}
+
+/* subtle techno grid */
+.grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(110,168,255,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(126,240,199,.06) 1px, transparent 1px);
+    background-size: 36px 36px, 36px 36px;
+    mask-image: radial-gradient(circle at center, black 35%, transparent 90%);
+    opacity: .28;
+    animation: gridShift 18s linear infinite;
+}
+
+@keyframes gridShift {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(36px);
+    }
+}
+
+/* fake code rain overlay */
+.code-rain {
+    position: absolute;
+    inset: 0;
+    opacity: .12;
+    background-image: repeating-linear-gradient( 180deg, rgba(110,168,255,.45) 0 2px, transparent 2px 24px ), repeating-linear-gradient( 180deg, rgba(126,240,199,.35) 0 1px, transparent 1px 18px );
+    background-size: 2px 220px, 1px 160px;
+    background-position: 12% -220px, 76% -160px;
+    animation: rainFall 9s linear infinite;
+}
+
+@keyframes rainFall {
+    to {
+        background-position: 12% 220px, 76% 160px;
+    }
+}
+
+/* animated gradient headings */
+h1, .section h2{
+  color:#dff0ff;
+  text-shadow:
+    0 0 12px rgba(110,168,255,.25),
+    0 0 24px rgba(126,240,199,.18);
+}
+
+@keyframes headingGlow {
+    to {
+        background-position: 220% center;
+    }
+}
+
+/* card hover glow */
+.card {
+    position: relative;
+}
+
+    .card::before {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(120deg, rgba(110,168,255,.7), rgba(126,240,199,.6), rgba(180,120,255,.65));
+        -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        opacity: 0;
+        transition: opacity .25s ease;
+        pointer-events: none;
+    }
+
+    .card:hover::before {
+        opacity: 1;
+    }
+
+/* animated buttons */
+.choice {
+    position: relative;
+    overflow: hidden;
+}
+
+    .choice::after {
+        content: "";
+        position: absolute;
+        inset: auto -40% -120% -40%;
+        height: 180%;
+        background: linear-gradient(120deg, transparent 35%, rgba(255,255,255,.22) 50%, transparent 65%);
+        transform: translateX(-40%) rotate(8deg);
+        transition: transform .7s ease;
+    }
+
+    .choice:hover::after {
+        transform: translateX(40%) rotate(8deg);
+    }
+
+/* respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .blob, .grid-lines, .code-rain, h1, .section h2, .choice::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

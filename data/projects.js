@@ -31,7 +31,7 @@ window.PROJECTS = [
     title: "Batch Import & Validation Pipeline",
     roles: ["tooldev"],
     featured: true,
-    quality: "high",
+    quality: "medium",
     oneLiner: "Automated asset ingestion and validation to catch naming/config errors before integration.",
     thumbnail: "assets/projects/tooldev/batch-import-thumb.gif",
     visuals: [
@@ -55,7 +55,7 @@ window.PROJECTS = [
     title: "Savegame Inspector & Debugger",
     roles: ["tooldev"],
     featured: false,
-    quality: "high",
+    quality: "medium",
     oneLiner: "Built an internal savegame inspector that made reproduction and debugging significantly faster.",
     thumbnail: "assets/projects/tooldev/savegame-debug-thumb.jpg",
     visuals: [
@@ -79,99 +79,117 @@ window.PROJECTS = [
   // GAMEPLAY PROGRAMMING PROJECTS
   // =========================
   {
-    id: "melee-combat-system",
-    title: "Melee Combat System Prototype",
+    id: "graduation-work",
+    title: "Graduation Work",
     roles: ["gameplayprogramming"],
     featured: true,
     quality: "high",
-    oneLiner: "Designed responsive melee combat with input buffering, cancel windows, and hit-stop feedback.",
-    thumbnail: "assets/projects/gameplay/melee-combat-thumb.gif",
+    oneLiner: "Research that explores Soulslike game design and gamification elements",
+    thumbnail: "assets/projects/gameplay/graduation-work.gif",
     visuals: [
-      "assets/projects/gameplay/melee-combat-thumb.gif",
-      "assets/projects/gameplay/melee-combat-02.jpg"
+      "assets/projects/gameplay/graduation-work.gif",
+      "assets/projects/gameplay/graduation-work.png"
     ],
-    tech: ["C++", "Unreal", "Animation Blueprints", "State Machines"],
+    tech: ["C#", "Unity", "AI", "Soulslike"],
     breakdown: [
-      "Implemented combo chains with frame-window tuning tools.",
-      "Built hit reaction logic and camera impulse feedback.",
-      "Added data-driven move definitions for rapid balancing."
+      "Implemented boss fight with Soulslike combat",
+      "Added gamification elements to enhance player engagement",
+      "Found flow between Soulslike mechanics and player experience"
     ],
     links: {
       video: "",
-      repo: "",
-      article: ""
+      repo: "https://github.com/Dries-Fierens/EldenWrong",
+      article: "https://drive.google.com/file/d/1Q6D3rkl_ostYKmrQ0fYHxqTB0CBJcyf2/view?usp=sharing"
     }
   },
   {
-    id: "melee-combat-system",
-    title: "Melee Combat System Prototype",
+    id: "group-projects",
+    title: "Group projects",
     roles: ["gameplayprogramming"],
     featured: true,
     quality: "high",
-    oneLiner: "Designed responsive melee combat with input buffering, cancel windows, and hit-stop feedback.",
-    thumbnail: "assets/projects/gameplay/melee-combat-thumb.gif",
+    oneLiner: "Client project for Eye Blink Twice, The Garden",
+    thumbnail: "assets/projects/gameplay/the-garden.jpg",
     visuals: [
-      "assets/projects/gameplay/melee-combat-thumb.gif",
-      "assets/projects/gameplay/melee-combat-02.jpg"
+      "assets/projects/gameplay/the-garden.jpg"
     ],
-    tech: ["C++", "Unreal", "Animation Blueprints", "State Machines"],
+    tech: ["C#", "Unity", "Gameplay"],
     breakdown: [
-      "Implemented combo chains with frame-window tuning tools.",
-      "Built hit reaction logic and camera impulse feedback.",
-      "Added data-driven move definitions for rapid balancing."
+      "Implemented backend for objects, editing, placing, erasing, and more",
+      "Inspired by the Japanese garden in Hasselt",
+      "Cozy building game with satisfying and creative gameplay"
     ],
     links: {
-      video: "",
+      video: "https://drive.google.com/drive/folders/13fUHcubpuRG3K5tZp7uTpR91ZCLo2hW2?usp=sharing",
       repo: "",
-      article: ""
+      article: "https://drive.google.com/drive/folders/13fUHcubpuRG3K5tZp7uTpR91ZCLo2hW2?usp=sharing"
     }
   },
   {
-    id: "enemy-ai-encounters",
-    title: "Enemy AI & Encounter Director",
+    id: "burger-time",
+    title: "Burger Time",
     roles: ["gameplayprogramming"],
     featured: true,
     quality: "high",
-    oneLiner: "Created modular enemy behaviors and encounter pacing logic for more readable combat scenarios.",
-    thumbnail: "assets/projects/gameplay/enemy-ai-thumb.gif",
+    oneLiner: "Remake of the classic arcade game Burger Time",
+    thumbnail: "assets/projects/gameplay/burger-time.gif",
     visuals: [
-      "assets/projects/gameplay/enemy-ai-thumb.gif",
-      "assets/projects/gameplay/enemy-ai-02.jpg"
+      "assets/projects/gameplay/burger-time.gif"
     ],
-    tech: ["Behavior Trees", "EQS", "Blackboard", "Debug Tools"],
+    tech: ["C++", "Engine", "Gameplay", "AI"],
     breakdown: [
-      "Implemented role-based AI (flanker, pressure, ranged).",
-      "Built utility-scored action selection for adaptive behavior.",
-      "Added debug overlays for perception, targets, and state transitions."
+      "Implemented a small 2D game engine to create a remake of any classic arcade game",
+      "Learned 'Game Programming Patterns' by Robert Nystrom and Beautiful C++",
+      "Available on github pages by using Emscripten"
     ],
     links: {
-      video: "",
-      repo: "",
-      article: ""
+      video: "https://www.youtube.com/watch?v=QlPp7WEnaCI",
+      repo: "https://github.com/Dries-Fierens/Prog4_BurgerTime_Fierens_Dries",
+      article: "https://dries-fierens.github.io/Prog4_BurgerTime_Fierens_Dries/"
     }
   },
   {
-    id: "movement-traversal",
-    title: "Character Movement & Traversal",
+    id: "zombie-game",
+    title: "Zombie AI Game",
     roles: ["gameplayprogramming"],
-    featured: false,
+    featured: true,
     quality: "high",
-    oneLiner: "Implemented traversal mechanics focused on clarity, responsiveness, and reliable edge-case handling.",
-    thumbnail: "assets/projects/gameplay/movement-traversal-thumb.gif",
+    oneLiner: "",
+    thumbnail: "assets/projects/gameplay/zombie-game.gif",
     visuals: [
-      "assets/projects/gameplay/movement-traversal-thumb.gif",
-      "assets/projects/gameplay/movement-traversal-02.jpg"
+      "assets/projects/gameplay/zombie-game.gif"
     ],
-    tech: ["C++", "Root Motion", "IK", "Collision Queries"],
+    tech: ["C++", "Unreal Engine", "Survival", "AI"],
     breakdown: [
-      "Built vault, mantle, and ledge-climb systems.",
-      "Added predictive traces and fallback states to reduce failures.",
-      "Created tuning variables for designers to iterate without code changes."
+      "Created an AI which controls an agent in a simple zombie survival game",
+      "Learned gameplay AI and mechanics like Steering behaviors, Flocking with space partitioning, Graphs, Astar, BFS, Navmeshes, EQS, Behavior trees, Blackboards, and more"
     ],
     links: {
       video: "",
-      repo: "",
-      article: ""
+      repo: "https://github.com/DAE-GD-2025-2026/gameai-zombie-Dries-Fierens",
+      article: "https://github.com/DAE-GD-2025-2026/game-ai-project-Dries-Fierens"
+    }
+  },
+  {
+    id: "gameai-research-project",
+    title: "Game AI Research Project",
+    roles: ["gameplayprogramming"],
+    featured: true,
+    quality: "high",
+    oneLiner: "Binary Space Partitioning for Dungeon Generation",
+    thumbnail: "assets/projects/gameplay/binary-space-partitioning.png",
+    visuals: [
+      "assets/projects/gameplay/binary-space-partitioning.png"
+    ],
+    tech: ["C#", "Unity", "Procedural Generation", "Dungeon"],
+    breakdown: [
+      "Implemented Binary Space Partitioning for dungeon generation",
+      "Procedurally generates specific rooms and corridors in partitions"
+    ],
+    links: {
+      video: "",
+      repo: "https://github.com/DAE-GD-2025-2026/gameai-research-project-Dries-Fierens",
+      article: "https://github.com/DAE-GD-2025-2026/gameai-research-project-Dries-Fierens"
     }
   }
 ];
