@@ -3,74 +3,69 @@ window.PROJECTS = [
   // TOOL DEVELOPMENT PROJECTS
   // =========================
   {
-    id: "quest-graph-editor",
-    title: "Quest Graph Editor",
+    id: "room-rent",
+    title: "Group project Roomrent",
     roles: ["tooldev"],
     featured: true,
     quality: "high",
-    oneLiner: "Built a visual quest authoring tool that reduced scripting mistakes and sped up iteration time.",
-    thumbnail: "assets/projects/tooldev/quest-graph-thumb.gif",
+    oneLiner: "Roomrent which now is called Woonzorgzeker is a state-of-the-art web platform that enables elderly persons to easily sign up for a residential care centre of their choice",
+    thumbnail: "assets/projects/tooldev/room-rent.png",
     visuals: [
-      "assets/projects/tooldev/quest-graph-thumb.gif",
-      "assets/projects/tooldev/quest-graph-02.jpg"
+      "assets/projects/tooldev/room-rent.png"
     ],
-    tech: ["C++", "Unreal", "Slate/UMG", "JSON"],
+    tech: ["C#", ".NET", "Blazor", "WebAssembly", "MySQL"],
     breakdown: [
-      "Created node-based quest editing with validation rules.",
-      "Implemented search, copy/paste, and graph diff support.",
-      "Added export pipeline for runtime quest data."
+      "Collaborated on the starter project with Joseph Mampaey and Gerrit De Mol",
+      "Implemented backend by using .NET Core and Entity framework"
     ],
     links: {
       video: "",
       repo: "",
-      article: ""
+      article: "https://www.woonzorgzeker.be/"
     }
   },
   {
-    id: "batch-import-pipeline",
-    title: "Batch Import & Validation Pipeline",
-    roles: ["tooldev"],
-    featured: true,
-    quality: "medium",
-    oneLiner: "Automated asset ingestion and validation to catch naming/config errors before integration.",
-    thumbnail: "assets/projects/tooldev/batch-import-thumb.gif",
-    visuals: [
-      "assets/projects/tooldev/batch-import-thumb.gif",
-      "assets/projects/tooldev/batch-import-02.jpg"
-    ],
-    tech: ["Python", "CLI", "YAML", "CI"],
-    breakdown: [
-      "Implemented folder watchers and batch processors for content teams.",
-      "Added validation reports and auto-fix suggestions.",
-      "Integrated checks into CI to prevent broken assets from merging."
-    ],
-    links: {
-      video: "",
-      repo: "",
-      article: ""
-    }
-  },
-  {
-    id: "savegame-debugger",
-    title: "Savegame Inspector & Debugger",
+    id: "applied-programming",
+    title: "C# Applied Programming",
     roles: ["tooldev"],
     featured: false,
-    quality: "medium",
-    oneLiner: "Built an internal savegame inspector that made reproduction and debugging significantly faster.",
-    thumbnail: "assets/projects/tooldev/savegame-debug-thumb.jpg",
+    quality: "high",
+    oneLiner: "Explore the mandelbrot set and pendulum waves",
+    thumbnail: "assets/projects/tooldev/mandelbrot.gif",
     visuals: [
-      "assets/projects/tooldev/savegame-debug-thumb.jpg",
-      "assets/projects/tooldev/savegame-debug-02.jpg"
+      "assets/projects/tooldev/mandelbrot.gif"
     ],
-    tech: ["C++", "ImGui", "Serialization", "Profiling"],
+    tech: ["C#", "WPF"],
     breakdown: [
-      "Implemented snapshot compare between save states.",
-      "Added filtering by system/entity/component keys.",
-      "Included quick-jump links from errors to offending data blocks."
+      "2 projects that I made in my third year of Odisee",
+      "WPF application that makes it possible to explore the mandelbrot set and his fractals",
+      "Watch the pendulum waves and their strange movements"
     ],
     links: {
       video: "",
-      repo: "",
+      repo: "https://github.com/Dries-Fierens/2122-AP-driesfierens",
+      article: ""
+    }
+  },
+  {
+    id: "native-app-notable",
+    title: "Native Application Notable",
+    roles: ["tooldev"],
+    featured: false,
+    quality: "high",
+    oneLiner: "In this project I made a android application for uploading school notes and sharing them with your friends",
+    thumbnail: "assets/projects/tooldev/native-app-notable.png",
+    visuals: [
+      "assets/projects/tooldev/native-app-notable.png"
+    ],
+    tech: ["Java", "Android", "Firebase"],
+    breakdown: [
+      "Always ready to deploy on Android",
+      "Share notes or comment on the notes of your friends"
+    ],
+    links: {
+      video: "",
+      repo: "https://github.com/Dries-Fierens/Native-App-Notable",
       article: ""
     }
   },
@@ -104,7 +99,7 @@ window.PROJECTS = [
   },
   {
     id: "group-projects",
-    title: "Group projects",
+    title: "Group project",
     roles: ["gameplayprogramming"],
     featured: true,
     quality: "high",

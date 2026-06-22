@@ -421,3 +421,36 @@ h1, .section h2{
         transition: none !important;
     }
 }
+
+.about-wrap {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
+    align-items: start;
+    margin: 20px 0 36px;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    background: #0f1522;
+}
+
+.about-content h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 900px) {
+    .about-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-pic {
+        max-width: 220px;
+    }
+}
