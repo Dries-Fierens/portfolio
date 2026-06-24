@@ -99,7 +99,7 @@ window.PROJECTS = [
   },
   {
     id: "group-projects",
-    title: "Group project",
+    title: "The Garden",
     roles: ["gameplayprogramming"],
     featured: true,
     quality: "high",
@@ -118,6 +118,29 @@ window.PROJECTS = [
       video: "https://drive.google.com/drive/folders/13fUHcubpuRG3K5tZp7uTpR91ZCLo2hW2?usp=sharing",
       repo: "",
       article: "https://drive.google.com/drive/folders/13fUHcubpuRG3K5tZp7uTpR91ZCLo2hW2?usp=sharing"
+    }
+  },
+  {
+    id: "game-projects",
+    title: "Scrappled",
+    roles: ["gameplayprogramming"],
+    featured: true,
+    quality: "high",
+    oneLiner: "2D fast-paced looping race game made together with Robin Allaert, Toshko Dimitrov Georgiev, Santiago Herrera Huerta and Wouter Duprez",
+    thumbnail: "assets/projects/gameplay/game-project.png",
+    visuals: [
+      "assets/projects/gameplay/game-project.png"
+    ],
+    tech: ["C#", "Unity", "Gameplay"],
+    breakdown: [
+      "Use your quick reflexes and a grapple hook to dodge terrain and each other!",
+      "Beware of falling behind as the walls will close in on you faster than you'd expect!",
+      "Implemented grappling hook and movement",
+    ],
+    links: {
+      video: "https://www.youtube.com/watch?v=xFJHAlFfArs",
+      repo: "",
+      article: "https://driesfierens.itch.io/scrappled"
     }
   },
   {
